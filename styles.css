@@ -56,8 +56,8 @@ a {
 .brand img {
   display: block;
   width: auto;
-  height: 16px;
-  max-width: 96px;
+  height: 10px;
+  max-width: 62px;
   object-fit: contain;
 }
 
@@ -552,8 +552,8 @@ footer {
   }
 
   .brand img {
-    height: 15px;
-    max-width: 88px;
+    height: 10px;
+    max-width: 58px;
   }
 
   nav {
