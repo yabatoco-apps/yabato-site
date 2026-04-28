@@ -28,6 +28,7 @@ body {
     radial-gradient(circle at top right, rgba(123, 183, 255, 0.24), transparent 34rem),
     radial-gradient(circle at 10% 20%, rgba(64, 201, 162, 0.12), transparent 24rem),
     var(--bg);
+  overflow-x: hidden;
 }
 
 a {
@@ -556,8 +557,8 @@ footer {
   }
 
   .screenshot-carousel-wrap {
-    margin-inline: -42px;
-    padding-inline: 42px;
+    margin-inline: 0;
+    padding-inline: 0;
   }
 
   .screenshots {
@@ -647,5 +648,10 @@ footer {
 
   .screenshots {
     grid-auto-columns: 82%;
+  }
+
+  .screenshot-carousel-wrap {
+    width: 100%;
+    overflow: hidden;
   }
 }
