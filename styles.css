@@ -48,10 +48,15 @@ a {
 }
 
 .brand {
-  font-weight: 750;
-  letter-spacing: -0.03em;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  font-size: 1.08rem;
+}
+
+.brand img {
+  display: block;
+  width: auto;
+  height: 34px;
 }
 
 nav {
