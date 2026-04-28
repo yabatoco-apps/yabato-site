@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -427,6 +428,10 @@ footer {
   scrollbar-width: thin;
 }
 
+.screenshots::-webkit-scrollbar {
+  height: 0;
+}
+
 .screenshot-button {
   display: block;
   width: 100%;
@@ -544,8 +549,19 @@ footer {
 /* Responsive */
 
 @media (max-width: 980px) {
+  body,
+  main,
+  .site-header,
+  .section,
+  .app-hero,
+  .screenshots-section,
+  .screenshot-carousel-wrap {
+    max-width: 100%;
+  }
+
   .app-hero {
     grid-template-columns: 1fr;
+    overflow: hidden;
   }
 
   .hero-phone-card {
@@ -559,10 +575,13 @@ footer {
   .screenshot-carousel-wrap {
     margin-inline: 0;
     padding-inline: 0;
+    overflow: hidden;
   }
 
   .screenshots {
     grid-auto-columns: calc((100% - 18px) / 2);
+    width: 100%;
+    max-width: 100%;
   }
 
   .scroll-cue.left {
@@ -603,7 +622,9 @@ footer {
   }
 
   main {
-    width: min(100% - 28px, 1120px);
+    width: 100%;
+    padding-inline: 14px;
+    overflow: hidden;
   }
 
   .hero {
@@ -648,10 +669,19 @@ footer {
 
   .screenshots {
     grid-auto-columns: 82%;
+    max-width: 100%;
   }
 
   .screenshot-carousel-wrap {
     width: 100%;
+    max-width: 100%;
     overflow: hidden;
+  }
+
+  .screenshot-button,
+  .screenshot-button img,
+  .feature-banner,
+  .feature-banner img {
+    max-width: 100%;
   }
 }
