@@ -53,11 +53,12 @@ a {
   text-decoration: none;
 }
 
-.brand img {
+.site-header .brand img {
   display: block;
-  width: auto;
-  height: 10px;
-  max-width: 62px;
+  width: 54px;
+  max-width: 54px;
+  height: auto;
+  max-height: 14px;
   object-fit: contain;
 }
 
@@ -551,9 +552,11 @@ footer {
     padding: 18px 20px;
   }
 
-  .brand img {
-    height: 10px;
-    max-width: 58px;
+  .site-header .brand img {
+    width: 48px;
+    max-width: 48px;
+    height: auto;
+    max-height: 13px;
   }
 
   nav {
