@@ -205,7 +205,7 @@ h3 {
 
 .apps-stack {
   display: grid;
-  gap: 40px;
+  gap: 24px;
 }
 
 .app-card {
