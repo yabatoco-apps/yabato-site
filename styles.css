@@ -266,6 +266,7 @@ h3 {
 .pill {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   min-height: 38px;
   padding: 0 14px;
   border-radius: 999px;
@@ -407,6 +408,26 @@ footer {
   color: var(--muted);
   font-size: 0.92rem;
   font-weight: 750;
+}
+
+.play-pill,
+.play-cta {
+  gap: 9px;
+}
+
+.play-mark {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+  display: inline-block;
+  clip-path: polygon(14% 4%, 92% 50%, 14% 96%);
+  background: linear-gradient(135deg, #34a853 0 32%, #4285f4 32% 58%, #fbbc04 58% 76%, #ea4335 76% 100%);
+  box-shadow: 0 0 0 1px rgba(17, 24, 39, 0.04);
+}
+
+.button .play-mark {
+  width: 17px;
+  height: 17px;
 }
 
 .hero-phone-card h2 {
